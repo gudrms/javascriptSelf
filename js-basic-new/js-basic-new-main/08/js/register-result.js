@@ -3,7 +3,7 @@ function newRegister() {
 	var userName = document.querySelector("#userName");					
 	var newText = document.createTextNode(userName.value);  // 새 텍스트 노드 만들기
 	newP.appendChild(newText);  // 텍스트 노드를 p 요소의 자식 요소로 연결하기
-   
+  
   var delBttn = document.createElement("span"); 	// 새 button 요소 만들기 
   var delText = document.createTextNode("X");  // 새 텍스트 노드 만들기
   delBttn.setAttribute("class", "del");  // 버튼에 class 속성 설정하기
@@ -22,5 +22,5 @@ function newRegister() {
       if (this.parentNode.parentNode)  // 현재 노드(this)의 부모 노드의 부모 노드가 있을 경우 실행
         this.parentNode.parentNode.removeChild(this.parentNode);  // ‘현재 노드(this)의 부모 노드의 부모 노드’를 찾아 ‘현재 노드(this)의 부모 노드(p 노드)’ 삭제
     });
-  }	
-}		
+  }
+}
